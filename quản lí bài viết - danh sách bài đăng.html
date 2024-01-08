@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+    <style>
+      .action-buttons {
+          margin: 2px; /* Khoảng cách giữa các button */
+      }
+      .hidden {
+            display: none;
+        }
+  </style>
+    <!--font awesome-->
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Marck+Script&display=swap" rel="stylesheet">
+
+    <!--css file-->
+    <link rel="stylesheet" href="quản lí bài viết - danh sách bài đăng.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo">
+        <span class="logo-name">Travel</span>
+      <span class="logo-name__Trangquảntrị">Trang quản trị</span>
+      </div>
+
+      <ul class="nav-list">
+        <li>
+            <div class="profile-details">
+              <div class="profile-content">
+                <img src="https://top10dienbien.com/wp-content/uploads/2022/10/avatar-cute-9.jpg" alt="" />
+              </div>
+  
+              <div class="name-job">
+                <div class="name"> Phong</div>
+                <div class="job">Admin</div>
+              </div>
+              <i class="fas fa-right-to-bracket"></i>
+            </div>
+          </li>
+
+        <li>
+          <div class="icon-link">
+          <a href="#">
+            <i class="bi bi-house-door-fill"></i>
+            <span class="link-name">Trang chủ</span>
+          </a>
+  </div>
+          <ul class="sub-menu blank">
+            <li><a href="#" class="link-name">Trang chủ</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <div class="icon-link">
+            <a href="#">
+                <i class="bi bi-clipboard2-fill"></i>
+              <span class="link-name">Quản lí Tour</span>
+            </a>
+            <i class="fas fa-caret-down arrow"></i>
+          </div>
+
+          <ul class="sub-menu">
+            <li><a href="#" class="link-name">Quản lí Tour</a></li>
+            <li><a href="#">Địa điểm</a></li>
+            <li><a href="#">Danh mục</a></li>
+            <li><a href="#">Tours</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <div class="icon-link">
+            <a href="#">
+              <i class="fa-sharp fa-solid fa-file-pen"></i>
+              <span class="link-name">Bài viết</span>
+            </a>
+            <i class="fas fa-caret-down arrow"></i>
+          </div>
+
+          <ul class="sub-menu">
+            <li><a href="#" class="link-name">Bài viết</a></li>
+            <li><a href="#">Bài viết</a></li>
+            <li><a href="Quản lí bài viết danh mục.html">Danh mục</a></li>
+          </ul>
+        </li>
+
+        
+        <li>
+          <div class="icon-link">
+          <a href="#">
+            <i class="bi bi-calendar-fill"></i>
+            <span class="link-name">Đặt tour</span>
+          </a>
+        </div>
+          <ul class="sub-menu blank">
+            <li><a href="#" class="link-name">Đặt tour</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <div class="icon-link">
+          <a href="Phân quyền.html">
+            <i class="fa-solid fa-sitemap"></i>
+            <span class="link-name">Phân quyền</span>
+          </a>
+        </div>
+          <ul class="sub-menu blank">
+            <li><a href="#" class="link-name">Phân quyền</a></li>
+          </ul>
+        </li>
+
+
+        <li>
+          <div class="icon-link">
+          <a href="người dùng-danh sách.html">
+            <i class="bi bi-person-fill"></i>
+            <span class="link-name">Người dùng</span>
+          </a>
+        </div>
+          <ul class="sub-menu blank">
+            <li><a href="#" class="link-name">Người dùng</a></li>
+          </ul>
+        </li>
+
+        
+      </ul>
+      <img id="displayImage" alt="Saved Image" >
+    </div>
+
+    <div class="home-section">
+      <header class="home-content">
+        <i class="fas fa-bars"></i>
+        <!-- <button class="btn btn-primary" type="button">Button</button> -->
+        <button class="Login" type="button">Đăng xuất</button>
+        <!-- <span class="text">Dropdown Sidebar Menu</span> -->
+      </header>
+
+      <div class="under__header">
+        <div class="under__header-content">
+          <i class="bi bi-house-door-fill"></i>
+          <a href="#" class="=content-name">Trang chủ</a>
+          <p>/</p>
+          <a href="#" class="=content-name"> Quản lí bài viết</a>
+          <p>/</p>
+          <p class="DM">Danh sách bài đăng</p>
+        </div>
+      </div>
+      
+      <div class="Tìmkiếm">
+        <p class="Tìmkiếm_name">Tìm kiếm</p>
+        <input class="Tên-input" placeholder="Tiêu đề bài viết" id="IP1"></input>
+        <input class="Sốđiệnthoại-input" placeholder="Chọn danh mục" id="IP2"></input>
+      </div>
+    
+      <div class="blue-button">
+        <button class="blue-button__Tạomới" onclick="Redirect2()">
+          <i class="fa-solid fa-plus"></i>
+          Tạo mới
+        </button>
+        <!-- <button class="green-button__Tìmkiếm"> 
+          <i class="bi bi-search"></i>
+          Tìm kiếm
+      </button> -->
+      </div>
+    
+      <div class="Table-section">
+        <table id="TB">
+            <thead>
+              <tr>
+                <th class="Td-stt">STT</th>
+                <th class="Td-tiêuđề">Tiêu đề </th>
+                <th class="Td-hìnhảnh">Hình ảnh</th>
+                <th class="Td-danhmục">Danh mục</th>
+                <th class="Td-trạngthái">Trạng thái</th>
+                <th class="Td-ngàyđăng">Ngày đăng</th>
+                <th class="Td-hànhđộng">Hành động</th>
+              </tr>  
+            </thead>
+            <tbody id="userDataBody">
+              <tr>
+                <td class="Td-stt">1</td>
+                <td>Top 3 quán bún tại Phú Quốc </td>
+                <td class="Td-hìnhảnh"><img src="https://cdn3.ivivu.com/2022/07/bun-quay-kien-xay-ph%C3%BA-qu%E1%BB%91c.jpg" alt="" class="img"></td>
+                <td>Ẩm thực</td>
+                <td>Bản nháp</td>
+                <td class="randomDate"></td>
+                <td>
+                  <button id="pc1" onclick="saveRowToLocalStorage(1)"><i class="bi bi-pencil-fill"></i></button>
+                  <button id="pc2" onclick="deleteRow(this)"><i class="bi bi-trash3-fill"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td class="Td-stt">2</td>
+                <td>Review kinh nghiệm du lịch Cà Mau 2023 tất tần tật từ A - Z</td>
+                <td class="Td-hìnhảnh"><img src="https://dulichviet.com.vn/images/bandidau/cho-noi-ca-mau(2).jpg" alt=""  class="img"></td>
+                <td>Kinh nghiệm du lịch </td>
+                <td>Đã đăng</td>
+                <td class="randomDate"></td>
+                <td>
+                  <button  id="pc3" onclick="saveRowToLocalStorage(2)"><i class="bi bi-pencil-fill"></i></button>
+                  <button id="pc4" onclick="deleteRow(this)"><i class="bi bi-trash3-fill"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td class="Td-stt">3</td>
+                <td>18 mẹo tiết kiệm tiền đi du lịch dễ dàng hơn lúc nào hết</td>
+                <td class="Td-hìnhảnh"><img src="https://cdn3.ivivu.com/2016/01/18-meo-tiet-kiem-tien-di-du-lich-de-dang-hon-luc-nao-het-ivivu-2.jpg" alt=""  class="img"></td>
+                <td>Cẩm nang du lịch </td>
+                <td>Bản nháp</td>
+                <td class="randomDate"></td>
+                <td>
+                  <button  id="pc5"onclick="saveRowToLocalStorage(3)"><i class="bi bi-pencil-fill"></i></button>
+                  <button id="pc6" onclick="deleteRow(this)"><i class="bi bi-trash3-fill"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td class="Td-stt">4</td>
+                <td>Vì sao nên đeo khẩu trang diệt khuẩn Ecommed phòng chống dịch bệnh?</td>
+                <td class="Td-hìnhảnh"><img src="data:image/jpeg;base64,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" alt=""  class="img"></td>
+                <td>Cảnh báo </td>
+                <td>Đã đăng</td>
+                <td class="randomDate"></td>
+                <td>
+                  <button onclick="saveRowToLocalStorage(4)" id="pc7"><i class="bi bi-pencil-fill"></i></button>
+                  <button onclick="deleteRow(this)" id="pc8"><i class="bi bi-trash3-fill"></i></button>
+                </td>
+              </tr>
+            </tbody>
+        </table>
+       
+      </div>
+    </div>
+
+  
+    <script>
+      // Kiểm tra xem có dữ liệu trong local storage không
+      if(localStorage.getItem("userData")) {
+           // Lấy dữ liệu từ local storage
+           var userData = JSON.parse(localStorage.getItem("userData"));
+           
+           var buttonIds = ["pc1", "pc2"];
+           // Hiển thị dữ liệu trong bảng
+ 
+           var tableBody = document.getElementById("userDataBody");
+           var bb = document.getElementById("pc");
+           var row = tableBody.insertRow(4);
+           var cell1 = row.insertCell(0);
+           var cell2 = row.insertCell(1);
+           var cell3 = row.insertCell(2);
+           var cell4 = row.insertCell(3);
+           var cell5 = row.insertCell(4);
+           var cell6 = row.insertCell(5);
+           var cell7 = row.insertCell(6);
+           cell1.innerHTML = tableBody.rows.length;
+           cell2.innerHTML = userData.fullName;
+           cell4.innerHTML = userData.dob1;
+           cell5.innerHTML = userData.dob2;
+           cell6.innerHTML = "12/05/2023";
+           // Hiển thị hình ảnh trong cell3
+           const imageData = localStorage.getItem('savedImage');
+    const displayImage = document.getElementById('displayImage');
+
+    if (imageData) {
+      displayImage.src = imageData;
+    } else {
+      alert('No image found in local storage.');
+    }
+    displayImage.style.width = "200px"; // Thay đổi kích thước 
+    displayImage.style.height = "150px";
+    cell3.appendChild(displayImage);
+           for (var i = 0; i < buttonIds.length; i++) {
+               var existingButton = document.getElementById(buttonIds[i]).cloneNode(true);
+               existingButton.classList.add("action-buttons");
+               cell7.appendChild(existingButton);
+           }
+      }
+
+      if (localStorage.getItem("userData1")) {
+    // Lấy dữ liệu từ local storage
+    var userData1 = JSON.parse(localStorage.getItem("userData1"));
+
+    var buttonIds = ["pc1", "pc2"];
+    // Hiển thị dữ liệu trong bảng
+
+    var tableBody = document.getElementById("userDataBody");
+    var rowData = JSON.parse(localStorage.getItem("1"));
+    // Lấy hàng cần cập nhật, ví dụ, lấy hàng thứ 3
+    var rowToUpdate = tableBody.rows[rowData.STT - 1];
+
+    // Cập nhật dữ liệu trong các ô
+    rowToUpdate.cells[0].innerHTML = rowData.STT;
+    rowToUpdate.cells[1].innerHTML = userData1.fullName;
+    rowToUpdate.cells[2].innerHTML = ''; // Clear existing content in cell3
+    rowToUpdate.cells[3].innerHTML = userData1.dob1;
+    rowToUpdate.cells[4].innerHTML = userData1.dob2;
+    rowToUpdate.cells[5].innerHTML = "12/05/2023";
+    // Hiển thị hình ảnh trong cell3
+    const imageData = localStorage.getItem('savedImage');
+    const displayImage = document.createElement('img');
+
+    if (imageData) {
+        displayImage.src = imageData;
+    } else {
+        alert('No image found in local storage.');
+    }
+
+    displayImage.style.width = "200px"; // Thay đổi kích thước
+    displayImage.style.height = "150px";
+    rowToUpdate.cells[2].appendChild(displayImage);
+
+} else if (localStorage.getItem("userData2")) {
+    // Lấy dữ liệu từ local storage
+    var userData2 = JSON.parse(localStorage.getItem("userData2"));
+
+    var buttonIds = ["pc3", "pc4"];
+    // Hiển thị dữ liệu trong bảng
+
+    var tableBody = document.getElementById("userDataBody");
+    var rowData = JSON.parse(localStorage.getItem("2"));
+    // Lấy hàng cần cập nhật, ví dụ, lấy hàng thứ 3
+    var rowToUpdate = tableBody.rows[rowData.STT - 1];
+
+    // Cập nhật dữ liệu trong các ô
+    rowToUpdate.cells[0].innerHTML = rowData.STT;
+    rowToUpdate.cells[1].innerHTML = userData2.fullName;
+    rowToUpdate.cells[2].innerHTML = ''; // Clear existing content in cell3
+    rowToUpdate.cells[3].innerHTML = userData2.dob1;
+    rowToUpdate.cells[4].innerHTML = userData2.dob2;
+    rowToUpdate.cells[5].innerHTML = "12/05/2023";
+    // Hiển thị hình ảnh trong cell3
+    const imageData = localStorage.getItem('savedImage');
+    const displayImage = document.createElement('img');
+
+    if (imageData) {
+        displayImage.src = imageData;
+    } else {
+        alert('No image found in local storage.');
+    }
+
+    displayImage.style.width = "200px"; // Thay đổi kích thước
+    displayImage.style.height = "150px";
+    rowToUpdate.cells[2].appendChild(displayImage);
+
+} else if (localStorage.getItem("userData3")) {
+    // Lấy dữ liệu từ local storage
+    var userData3 = JSON.parse(localStorage.getItem("userData3"));
+
+    var buttonIds = ["pc5", "pc6"];
+    // Hiển thị dữ liệu trong bảng
+
+    var tableBody = document.getElementById("userDataBody");
+    var rowData = JSON.parse(localStorage.getItem("3"));
+    // Lấy hàng cần cập nhật, ví dụ, lấy hàng thứ 3
+    var rowToUpdate = tableBody.rows[rowData.STT - 1];
+
+    // Cập nhật dữ liệu trong các ô
+    rowToUpdate.cells[0].innerHTML = rowData.STT;
+    rowToUpdate.cells[1].innerHTML = userData3.fullName;
+    rowToUpdate.cells[2].innerHTML = ''; // Clear existing content in cell3
+    rowToUpdate.cells[3].innerHTML = userData3.dob1;
+    rowToUpdate.cells[4].innerHTML = userData3.dob2;
+    rowToUpdate.cells[5].innerHTML = "12/05/2023";
+    // Hiển thị hình ảnh trong cell3
+    const imageData = localStorage.getItem('savedImage');
+    const displayImage = document.createElement('img');
+
+    if (imageData) {
+        displayImage.src = imageData;
+    } else {
+        alert('No image found in local storage.');
+    }
+
+    displayImage.style.width = "200px"; // Thay đổi kích thước
+    displayImage.style.height = "150px";
+    rowToUpdate.cells[2].appendChild(displayImage);
+
+} else if (localStorage.getItem("userData4")) {
+    // Lấy dữ liệu từ local storage
+    var userData4 = JSON.parse(localStorage.getItem("userData4"));
+
+    var buttonIds = ["pc7", "pc8"];
+    // Hiển thị dữ liệu trong bảng
+
+    var tableBody = document.getElementById("userDataBody");
+    var rowData = JSON.parse(localStorage.getItem("4"));
+    // Lấy hàng cần cập nhật, ví dụ, lấy hàng thứ 3
+    var rowToUpdate = tableBody.rows[rowData.STT - 1];
+
+    // Cập nhật dữ liệu trong các ô
+    rowToUpdate.cells[0].innerHTML = rowData.STT;
+    rowToUpdate.cells[1].innerHTML = userData4.fullName;
+    rowToUpdate.cells[2].innerHTML = ''; // Clear existing content in cell3
+    rowToUpdate.cells[3].innerHTML = userData4.dob1;
+    rowToUpdate.cells[4].innerHTML = userData4.dob2;
+    rowToUpdate.cells[5].innerHTML = "12/05/2023";
+    // Hiển thị hình ảnh trong cell3
+    const imageData = localStorage.getItem('savedImage');
+    const displayImage = document.createElement('img');
+
+    if (imageData) {
+        displayImage.src = imageData;
+    } else {
+        alert('No image found in local storage.');
+    }
+
+    displayImage.style.width = "200px"; // Thay đổi kích thước
+    displayImage.style.height = "150px";
+    rowToUpdate.cells[2].appendChild(displayImage);
+
+}
+
+
+      
+      function saveRowToLocalStorage(rowIndex) {
+    var table = document.getElementById("TB");
+    var rowData = {
+        STT :  table.rows[rowIndex].cells[0].innerText,
+        fullName: table.rows[rowIndex].cells[1].innerText,
+        image: table.rows[rowIndex].cells[2].querySelector('img').src,
+        dob1: table.rows[rowIndex].cells[3].innerText,
+        dob2: table.rows[rowIndex].cells[4].innerText
+    };
+
+    // Lưu dữ liệu của hàng vào local storage
+    localStorage.setItem(rowIndex, JSON.stringify(rowData));
+
+    Redirect()
+} 
+
+
+
+
+function deleteRow(button) {
+        // Get the row that contains the button
+        var tableBody = document.getElementById("userDataBody");
+        var row = button.parentNode.parentNode;
+        var nameValue = row.cells[0].innerHTML;
+        // Delete the row
+        row.parentNode.removeChild(row);
+        for (var i = nameValue + 1; i < tableBody.rows.length; i++) {
+          tableBody.rows[i].cells[0].innerHTML = i ;
+        }
+    }
+
+
+
+    function getRandomDate() {
+            var startDate = new Date();
+            startDate.setMonth(startDate.getMonth() - 1);
+            var endDate = new Date();
+
+            // Lặp qua tất cả các phần tử có class "randomDate"
+            var elements = document.getElementsByClassName("randomDate");
+            for (var i = 0; i < elements.length; i++) {
+                var randomDate = new Date(startDate.getTime() + Math.random() * (endDate.getTime() - startDate.getTime()));
+                elements[i].innerText = randomDate.toLocaleDateString();
+            }
+        }
+
+        getRandomDate();
+
+function Redirect(src)
+{
+       window.location ="Danh sách bài đăng-chỉnh sửa.html";
+}
+function Redirect2(src)
+{
+       window.location ="Danh sách bài đăng-tạo mới.html";
+}
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    // ... (các phần khác của mã JavaScript)
+// Lấy các phần tử cần thiết từ DOM
+const input1 = document.getElementById('IP1');
+    const input2 = document.getElementById('IP2');
+    const table = document.getElementById('TB');
+    const rows = table.getElementsByTagName('tr');
+
+    // Thêm sự kiện khi nhấn phím Enter trong input1
+    input1.addEventListener('keyup', function (event) {
+        if (event.key === 'Enter') {
+            filterTable();
+        }
+    });
+
+    // Thêm sự kiện khi nhấn phím Enter trong input2
+    input2.addEventListener('keyup', function (event) {
+        if (event.key === 'Enter') {
+            filterTable();
+        }
+    });
+    // Hàm lọc dữ liệu trong bảng
+    function filterTable() {
+        const filterValue1 = input1.value.toUpperCase();
+        const filterValue2 = input2.value.toUpperCase();
+        let found = false;  // Biến để kiểm tra xem có dữ liệu khớp hay không
+
+        // Lặp qua các hàng của bảng và ẩn hoặc hiển thị tùy thuộc vào dữ liệu nhập
+        for (let i = 0; i < rows.length; i++) {
+            const td1 = rows[i].getElementsByTagName('td')[1];
+            const td2 = rows[i].getElementsByTagName('td')[3];
+
+            if (td1 || td2) {
+                const textValue1 = td1.textContent || td1.innerText;
+                const textValue2 = td2.textContent || td2.innerText;
+
+                if (textValue1.toUpperCase().indexOf(filterValue1) > -1 &&
+                    textValue2.toUpperCase().indexOf(filterValue2) > -1) {
+                    // Nếu dữ liệu trong hàng khớp với tìm kiếm, hiển thị hàng
+                    rows[i].classList.remove('hidden');
+                    found = true;  // Đánh dấu là đã tìm thấy dữ liệu khớp
+                } else {
+                    // Ngược lại, ẩn hàng
+                    rows[i].classList.add('hidden');
+                }
+            }
+        }
+
+        // Hiển thị thông báo nếu không có dữ liệu khớp
+        if (!found) {
+            alert('Dữ liệu không có trong hệ thống');
+        }
+    }
+});
+   </script>
+   <script src="sidebar.js"></script>
+
+
+
+
+
+  </body>
+</html>

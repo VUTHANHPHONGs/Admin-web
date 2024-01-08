@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+    <style>
+      .action-buttons {
+          margin: 2px; /* Khoảng cách giữa các button */
+      }
+      .hidden {
+            display: none;
+        }
+        .home-content i {
+      opacity: 0;
+     }
+  </style>
+    <!--font awesome-->
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Marck+Script&display=swap" rel="stylesheet">
+
+    <!--css file-->
+    <link rel="stylesheet" href="Địa điểm-danh sách.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo">
+        <span class="logo-name">Travel</span>
+      <span class="logo-name__Trangquảntrị">Trang quản trị</span>
+      </div>
+
+      <ul class="nav-list">
+        <li>
+            <div class="profile-details">
+              <div class="profile-content">
+                <img src="https://top10dienbien.com/wp-content/uploads/2022/10/avatar-cute-9.jpg" alt="" />
+              </div>
+  
+              <div class="name-job">
+                <div class="name"> Phong</div>
+                <div class="job">Admin</div>
+              </div>
+              <i class="fas fa-right-to-bracket"></i>
+            </div>
+          </li>
+
+        <li>
+          <div class="icon-link">
+          <a href="#">
+            <i class="bi bi-house-door-fill"></i>
+            <span class="link-name">Trang chủ</span>
+          </a>
+  </div>
+          <ul class="sub-menu blank">
+            <li><a href="#" class="link-name">Trang chủ</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <div class="icon-link">
+            <a href="#">
+                <i class="bi bi-clipboard2-fill"></i>
+              <span class="link-name">Quản lí Tour</span>
+            </a>
+            <i class="fas fa-caret-down arrow"></i>
+          </div>
+
+          <ul class="sub-menu">
+            <li><a href="#" class="link-name">Quản lí Tour</a></li>
+            <li><a href="Địa điểm-danh sách.html">Địa điểm</a></li>
+            <li><a href="Quản lí bài viết danh mục.html">Danh mục</a></li>
+            <li><a href="Tour-danh sách.html">Tours</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <div class="icon-link">
+            <a href="#">
+              <i class="fa-sharp fa-solid fa-file-pen"></i>
+              <span class="link-name">Bài viết</span>
+            </a>
+            <i class="fas fa-caret-down arrow"></i>
+          </div>
+
+          <ul class="sub-menu">
+            <li><a href="#" class="link-name">Bài viết</a></li>
+            <li><a href="#">Bài viết</a></li>
+            <li><a href="#">Danh mục</a></li>
+          </ul>
+        </li>
+
+        
+        <li>
+          <div class="icon-link">
+          <a href="#">
+            <i class="bi bi-calendar-fill"></i>
+            <span class="link-name">Đặt tour</span>
+          </a>
+        </div>
+          <ul class="sub-menu blank">
+            <li><a href="#" class="link-name">Đặt tour</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <div class="icon-link">
+          <a href="#">
+            <i class="fa-solid fa-sitemap"></i>
+            <span class="link-name">Phân quyền</span>
+          </a>
+        </div>
+          <ul class="sub-menu blank">
+            <li><a href="#" class="link-name">Phân quyền</a></li>
+          </ul>
+        </li>
+
+       
+        <li>
+          <div class="icon-link">
+          <a href="#">
+            <i class="bi bi-person-fill"></i>
+            <span class="link-name">Người dùng</span>
+          </a>
+        </div>
+          <ul class="sub-menu blank">
+            <li><a href="#" class="link-name">Người dùng</a></li>
+          </ul>
+        </li>
+
+      </ul>
+      <img id="displayImage" alt="Saved Image" >
+    </div>
+
+    <div class="home-section">
+      <header class="home-content">
+        <i class="fas fa-bars"></i>
+        <!-- <button class="btn btn-primary" type="button">Button</button> -->
+        <button class="Login" type="button">Đăng xuất</button>
+        <!-- <span class="text">Dropdown Sidebar Menu</span> -->
+      </header>
+
+      <div class="under__header">
+        <div class="under__header-content">
+          <i class="bi bi-house-door-fill"></i>
+          <a href="#" class="=content-name">Trang chủ</a>
+          <p>/</p>
+          <a href="#" class="=content-name"> Địa điểm</a>
+          <p>/</p>
+          <p class="DM">Danh sách</p>
+        </div>
+      </div>
+      
+      <div class="Tìmkiếm">
+        <p class="Tìmkiếm_name">Tìm kiếm</p>
+        <input class="Tên-input" placeholder="Tên địa điểm" id="IP1"></input>
+        <input class="Sốđiệnthoại-input" placeholder="Trạng thái" id="IP2"></input>
+      </div>
+    
+      <div class="blue-button">
+        <button class="blue-button__Tạomới" onclick="Redirect2()">
+          <i class="fa-solid fa-plus"></i>
+          Tạo mới
+        </button>
+        <!-- <button class="green-button__Tìmkiếm"> 
+          <i class="bi bi-search"></i>
+          Tìm kiếm
+      </button> -->
+      </div>
+    
+      <div class="Table-section">
+        <table id="TB">
+            <thead>
+              <tr>
+                <th class="Td-stt">STT</th>
+                <th class="Td-têndịađiểm">Tên địa điểm</th>
+                <th class="Td-hìnhảnh">Hình ảnh</th>
+                <th class="Td-trạngthái">Trạng thái</th>
+                <th class="Td-hànhđộng">Hành động</th>
+              </tr>  
+            </thead>
+            <tbody id="userDataBody">
+              <tr>
+                <td class="Td-stt">1</td>
+                <td>Vịnh Hạ Long</td>
+                <td class="Td-hìnhảnh"><img src="https://ik.imagekit.io/tvlk/blog/2022/10/kinh-nghiem-du-lich-vinh-ha-long-1.jpg?tr=dpr-2,w-675" alt="" class="img"></td>
+                <td>Ẩn</td>
+                <td>
+                  <button id="pc1" onclick="saveRowToLocalStorage(1)"><i class="bi bi-pencil-fill"></i></button>
+                  <button id="pc2" onclick="deleteRow(this)"><i class="bi bi-trash3-fill"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td class="Td-stt">2</td>
+                <td>Hang Sơn Đoòng</td>
+                <td class="Td-hìnhảnh"><img src="https://bcp.cdnchinhphu.vn/334894974524682240/2022/4/14/hang-son-doong-1649899820643788078206.jpg" alt=""  class="img"></td>
+                <td>Hiển thị</td>
+                <td>
+                  <button  id="pc3" onclick="saveRowToLocalStorage(2)"><i class="bi bi-pencil-fill"></i></button>
+                  <button id="pc4" onclick="deleteRow(this)"><i class="bi bi-trash3-fill"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td class="Td-stt">3</td>
+                <td>Nha Trang</td>
+                <td class="Td-hìnhảnh"><img src="https://statics.vinpearl.com/nha-trang-2_1691674644.jpg" alt=""  class="img"></td>
+                <td>Hiển thị</td>
+                <td>
+                  <button  id="pc5"onclick="saveRowToLocalStorage(3)"><i class="bi bi-pencil-fill"></i></button>
+                  <button id="pc6" onclick="deleteRow(this)"><i class="bi bi-trash3-fill"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td class="Td-stt">4</td>
+                <td>Đà Nẵng</td>
+                <td class="Td-hìnhảnh"><img src="https://vcdn1-dulich.vnecdn.net/2022/06/03/cauvang-1654247842-9403-1654247849.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=Swd6JjpStebEzT6WARcoOA" alt=""  class="img"></td>
+                <td>Ẩn</td>
+                <td>
+                  <button onclick="saveRowToLocalStorage(4)" id="pc7"><i class="bi bi-pencil-fill"></i></button>
+                  <button onclick="deleteRow(this)" id="pc8"><i class="bi bi-trash3-fill"></i></button>
+                </td>
+              </tr>
+            </tbody>
+        </table>
+       
+      </div>
+    </div>
+
+  
+    <script>
+      // Kiểm tra xem có dữ liệu trong local storage không
+      if(localStorage.getItem("userData")) {
+           // Lấy dữ liệu từ local storage
+           var userData = JSON.parse(localStorage.getItem("userData"));
+           
+           var buttonIds = ["pc1", "pc2"];
+           // Hiển thị dữ liệu trong bảng
+ 
+           var tableBody = document.getElementById("userDataBody");
+           var bb = document.getElementById("pc");
+           var row = tableBody.insertRow(4);
+           var cell1 = row.insertCell(0);
+           var cell2 = row.insertCell(1);
+           var cell3 = row.insertCell(2);
+           var cell4 = row.insertCell(3);
+           var cell5 = row.insertCell(4);
+           cell1.innerHTML = tableBody.rows.length;
+           cell4.innerHTML = userData.dob;
+           cell2.innerHTML = userData.fullName;
+           // Hiển thị hình ảnh trong cell3
+           const imageData = localStorage.getItem('savedImage');
+    const displayImage = document.getElementById('displayImage');
+
+    if (imageData) {
+      displayImage.src = imageData;
+    } else {
+      alert('No image found in local storage.');
+    }
+    displayImage.style.width = "300px"; // Thay đổi kích thước 
+    displayImage.style.height = "150px";
+    cell3.appendChild(displayImage);
+           for (var i = 0; i < buttonIds.length; i++) {
+               var existingButton = document.getElementById(buttonIds[i]).cloneNode(true);
+               existingButton.classList.add("action-buttons");
+               cell5.appendChild(existingButton);
+           }
+      }
+
+      if (localStorage.getItem("userData1")) {
+    // Lấy dữ liệu từ local storage
+    var userData1 = JSON.parse(localStorage.getItem("userData1"));
+
+    var buttonIds = ["pc1", "pc2"];
+    // Hiển thị dữ liệu trong bảng
+
+    var tableBody = document.getElementById("userDataBody");
+    var rowData = JSON.parse(localStorage.getItem("1"));
+    // Lấy hàng cần cập nhật, ví dụ, lấy hàng thứ 3
+    var rowToUpdate = tableBody.rows[rowData.STT - 1];
+
+    // Cập nhật dữ liệu trong các ô
+    rowToUpdate.cells[0].innerHTML = rowData.STT;
+    rowToUpdate.cells[1].innerHTML = userData1.fullName;
+    rowToUpdate.cells[2].innerHTML = ''; // Clear existing content in cell3
+    rowToUpdate.cells[3].innerHTML = userData1.dob;
+  
+    // Hiển thị hình ảnh trong cell3
+    const imageData = localStorage.getItem('savedImage');
+    const displayImage = document.createElement('img');
+
+    if (imageData) {
+        displayImage.src = imageData;
+    } else {
+        alert('No image found in local storage.');
+    }
+
+    displayImage.style.width = "300px"; // Thay đổi kích thước
+    displayImage.style.height = "150px";
+    rowToUpdate.cells[2].appendChild(displayImage);
+
+} else if (localStorage.getItem("userData2")) {
+    // Lấy dữ liệu từ local storage
+    var userData2 = JSON.parse(localStorage.getItem("userData2"));
+
+    var buttonIds = ["pc3", "pc4"];
+    // Hiển thị dữ liệu trong bảng
+
+    var tableBody = document.getElementById("userDataBody");
+    var rowData = JSON.parse(localStorage.getItem("2"));
+    // Lấy hàng cần cập nhật, ví dụ, lấy hàng thứ 3
+    var rowToUpdate = tableBody.rows[rowData.STT - 1];
+
+    // Cập nhật dữ liệu trong các ô
+    rowToUpdate.cells[0].innerHTML = rowData.STT;
+    rowToUpdate.cells[1].innerHTML = userData2.fullName;
+    rowToUpdate.cells[2].innerHTML = ''; // Clear existing content in cell3
+    rowToUpdate.cells[3].innerHTML = userData2.dob;
+  
+    // Hiển thị hình ảnh trong cell3
+    const imageData = localStorage.getItem('savedImage');
+    const displayImage = document.createElement('img');
+
+    if (imageData) {
+        displayImage.src = imageData;
+    } else {
+        alert('No image found in local storage.');
+    }
+
+    displayImage.style.width = "300px"; // Thay đổi kích thước
+    displayImage.style.height = "150px";
+    rowToUpdate.cells[2].appendChild(displayImage);
+
+} else if (localStorage.getItem("userData3")) {
+    // Lấy dữ liệu từ local storage
+    var userData3 = JSON.parse(localStorage.getItem("userData3"));
+
+    var buttonIds = ["pc5", "pc6"];
+    // Hiển thị dữ liệu trong bảng
+
+    var tableBody = document.getElementById("userDataBody");
+    var rowData = JSON.parse(localStorage.getItem("3"));
+    // Lấy hàng cần cập nhật, ví dụ, lấy hàng thứ 3
+    var rowToUpdate = tableBody.rows[rowData.STT - 1];
+
+    // Cập nhật dữ liệu trong các ô
+    rowToUpdate.cells[0].innerHTML = rowData.STT;
+    rowToUpdate.cells[1].innerHTML = userData3.fullName;
+    rowToUpdate.cells[2].innerHTML = ''; // Clear existing content in cell3
+    rowToUpdate.cells[3].innerHTML = userData3.dob;
+  
+    // Hiển thị hình ảnh trong cell3
+    const imageData = localStorage.getItem('savedImage');
+    const displayImage = document.createElement('img');
+
+    if (imageData) {
+        displayImage.src = imageData;
+    } else {
+        alert('No image found in local storage.');
+    }
+
+    displayImage.style.width = "300px"; // Thay đổi kích thước
+    displayImage.style.height = "150px";
+    rowToUpdate.cells[2].appendChild(displayImage);
+
+} else if (localStorage.getItem("userData4")) {
+    // Lấy dữ liệu từ local storage
+    var userData4 = JSON.parse(localStorage.getItem("userData4"));
+
+    var buttonIds = ["pc5", "pc6"];
+    // Hiển thị dữ liệu trong bảng
+
+    var tableBody = document.getElementById("userDataBody");
+    var rowData = JSON.parse(localStorage.getItem("4"));
+    // Lấy hàng cần cập nhật, ví dụ, lấy hàng thứ 3
+    var rowToUpdate = tableBody.rows[rowData.STT - 1];
+
+    // Cập nhật dữ liệu trong các ô
+    rowToUpdate.cells[0].innerHTML = rowData.STT;
+    rowToUpdate.cells[1].innerHTML = userData4.fullName;
+    rowToUpdate.cells[2].innerHTML = ''; // Clear existing content in cell3
+    rowToUpdate.cells[3].innerHTML = userData4.dob;
+  
+    // Hiển thị hình ảnh trong cell3
+    const imageData = localStorage.getItem('savedImage');
+    const displayImage = document.createElement('img');
+
+    if (imageData) {
+        displayImage.src = imageData;
+    } else {
+        alert('Hãy chọn ảnh.');
+    }
+
+    displayImage.style.width = "300px"; // Thay đổi kích thước
+    displayImage.style.height = "150px";
+    rowToUpdate.cells[2].appendChild(displayImage);
+
+}
+
+
+      
+      function saveRowToLocalStorage(rowIndex) {
+    var table = document.getElementById("TB");
+    var rowData = {
+        STT :  table.rows[rowIndex].cells[0].innerText,
+        text1: table.rows[rowIndex].cells[1].innerText,
+        image: table.rows[rowIndex].cells[2].querySelector('img').src,
+        text2: table.rows[rowIndex].cells[3].innerText
+    };
+
+    // Lưu dữ liệu của hàng vào local storage
+    localStorage.setItem(rowIndex, JSON.stringify(rowData));
+    Redirect()
+} 
+
+
+
+
+function deleteRow(button) {
+        // Get the row that contains the button
+        var tableBody = document.getElementById("userDataBody");
+        var row = button.parentNode.parentNode;
+        var nameValue = row.cells[0].innerHTML;
+        // Delete the row
+        row.parentNode.removeChild(row);
+        for (var i = nameValue + 1; i < tableBody.rows.length; i++) {
+          tableBody.rows[i].cells[0].innerHTML = i ;
+        }
+    }
+
+    function Redirect(src)
+{
+       window.location ="Địa điểm-chỉnh sửa.html";
+}
+function Redirect2(src)
+{
+       window.location ="Địa điểm-tạo mới.html";
+}
+
+    document.addEventListener('DOMContentLoaded', function () {
+    // ... (các phần khác của mã JavaScript)
+// Lấy các phần tử cần thiết từ DOM
+const input1 = document.getElementById('IP1');
+    const input2 = document.getElementById('IP2');
+    const table = document.getElementById('TB');
+    const rows = table.getElementsByTagName('tr');
+
+    // Thêm sự kiện khi nhấn phím Enter trong input1
+    input1.addEventListener('keyup', function (event) {
+        if (event.key === 'Enter') {
+            filterTable();
+        }
+    });
+
+    // Thêm sự kiện khi nhấn phím Enter trong input2
+    input2.addEventListener('keyup', function (event) {
+        if (event.key === 'Enter') {
+            filterTable();
+        }
+    });
+    // Hàm lọc dữ liệu trong bảng
+    function filterTable() {
+        const filterValue1 = input1.value.toUpperCase();
+        const filterValue2 = input2.value.toUpperCase();
+        let found = false;  // Biến để kiểm tra xem có dữ liệu khớp hay không
+
+        // Lặp qua các hàng của bảng và ẩn hoặc hiển thị tùy thuộc vào dữ liệu nhập
+        for (let i = 0; i < rows.length; i++) {
+            const td1 = rows[i].getElementsByTagName('td')[1];
+            const td2 = rows[i].getElementsByTagName('td')[3];
+
+            if (td1 || td2) {
+                const textValue1 = td1.textContent || td1.innerText;
+                const textValue2 = td2.textContent || td2.innerText;
+
+                if (textValue1.toUpperCase().indexOf(filterValue1) > -1 &&
+                    textValue2.toUpperCase().indexOf(filterValue2) > -1) {
+                    // Nếu dữ liệu trong hàng khớp với tìm kiếm, hiển thị hàng
+                    rows[i].classList.remove('hidden');
+                    found = true;  // Đánh dấu là đã tìm thấy dữ liệu khớp
+                } else {
+                    // Ngược lại, ẩn hàng
+                    rows[i].classList.add('hidden');
+                }
+            }
+        }
+
+        // Hiển thị thông báo nếu không có dữ liệu khớp
+        if (!found) {
+            alert('Dữ liệu không có trong hệ thống');
+        }
+    }
+});
+
+
+
+   </script>
+   <script src="sidebar.js"></script>
+  </body>
+</html>

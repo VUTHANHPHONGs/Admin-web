@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+
+    <!--font awesome-->
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Marck+Script&display=swap" rel="stylesheet">
+
+    <!--css file-->
+    <link rel="stylesheet" href="Phân quyền.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo">
+        <span class="logo-name">Travel</span>
+      <span class="logo-name__Trangquảntrị">Trang quản trị</span>
+      </div>
+
+      <ul class="nav-list">
+        <li>
+            <div class="profile-details">
+              <div class="profile-content">
+                <img src="https://top10dienbien.com/wp-content/uploads/2022/10/avatar-cute-9.jpg" alt="" />
+              </div>
+  
+              <div class="name-job">
+                <div class="name"> Phong</div>
+                <div class="job">Admin</div>
+              </div>
+              <i class="fas fa-right-to-bracket"></i>
+            </div>
+          </li>
+
+        <li>
+          <div class="icon-link">
+          <a href="#">
+            <i class="bi bi-house-door-fill"></i>
+            <span class="link-name">Trang chủ</span>
+          </a>
+  </div>
+          <ul class="sub-menu blank">
+            <li><a href="#" class="link-name">Trang chủ</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <div class="icon-link">
+            <a href="#">
+                <i class="bi bi-clipboard2-fill"></i>
+              <span class="link-name">Quản lí Tour</span>
+            </a>
+            <i class="fas fa-caret-down arrow"></i>
+          </div>
+
+          <ul class="sub-menu">
+            <li><a href="#" class="link-name">Quản lí Tour</a></li>
+            <li><a href="#">Địa điểm</a></li>
+            <li><a href="#">Danh mục</a></li>
+            <li><a href="#">Tours</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <div class="icon-link">
+            <a href="quản lí bài viết - danh sách bài đăng.html">
+              <i class="fa-sharp fa-solid fa-file-pen"></i>
+              <span class="link-name">Bài viết</span>
+            </a>
+            <i class="fas fa-caret-down arrow"></i>
+          </div>
+
+          <ul class="sub-menu">
+            <li><a href="#" class="link-name">Bài viết</a></li>
+            <li><a href="quản lí bài viết - danh sách bài đăng.html">Bài viết</a></li>
+            <li><a href="Quản lí bài viết danh mục.html">Danh mục</a></li>
+          </ul>
+        </li>
+
+        
+        <li>
+          <div class="icon-link">
+          <a href="#">
+            <i class="bi bi-calendar-fill"></i>
+            <span class="link-name">Đặt tour</span>
+          </a>
+        </div>
+          <ul class="sub-menu blank">
+            <li><a href="#" class="link-name">Đặt tour</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <div class="icon-link">
+          <a href="#">
+            <i class="fa-solid fa-sitemap"></i>
+            <span class="link-name">Phân quyền</span>
+          </a>
+        </div>
+          <ul class="sub-menu blank">
+            <li><a href="#" class="link-name">Phân quyền</a></li>
+          </ul>
+        </li>
+
+        
+
+        <li>
+          <div class="icon-link">
+          <a href="người dùng-danh sách.html">
+            <i class="bi bi-person-fill"></i>
+            <span class="link-name" onclick="Redirect3()">Người dùng</span>
+          </a>
+        </div>
+          <ul class="sub-menu blank">
+            <li><a href="#" class="link-name">Người dùng</a></li>
+          </ul>
+        </li>
+
+      
+      </ul>
+    </div>
+
+    <div class="home-section">
+      <header class="home-content">
+        <i class="fas fa-bars"></i>
+        <!-- <button class="btn btn-primary" type="button">Button</button> -->
+        <button class="Login" type="button">Đăng xuất</button>
+        <!-- <span class="text">Dropdown Sidebar Menu</span> -->
+      </header>
+
+      <div class="under__header">
+        <div class="under__header-content">
+          <i class="bi bi-house-door-fill"></i>
+          <a href="#" class="=content-name">Trang chủ</a>
+          <p>/</p>
+          <a href="#" class="=content-name"> Phân quyền</a>
+          <p>/</p>
+          <p class="DM">Danh mục</p>
+        </div>
+      </div>
+
+
+      <div class="Table-section">
+        <table id="TB">
+            <thead>
+              <tr>
+                <th class="STT">STT</th>
+                <th class="head">Tên vai trò</th>
+                <th class="head">Danh sách quyền</th>
+                <th class="head">Hành động</th>
+              </tr>  
+            </thead>
+            <tbody id="userDataBody">
+              <tr>
+                <td class="STT">1</td>
+                <td>Nhân viên</td>
+                <td class="role">Tạo mới bài viết</td>
+                <td>
+                  <button onclick="saveRowToLocalStorage(1)" id="pc1"><i class="bi bi-pencil-fill"></i></button>
+                  <button onclick="deleteRow(this)" id="pc2"><i class="bi bi-trash3-fill"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td class="STT">2</td>
+                <td>Admintrator</td>
+                <td class="role">Truy cập hệ thống</td>
+                <td>
+                  <button onclick="saveRowToLocalStorage(2)" id="pc1"><i class="bi bi-pencil-fill"></i></button>
+                  <button onclick="deleteRow(this)" id="pc2"><i class="bi bi-trash3-fill"></i></button>
+                </td>
+              </tr>
+            </tbody>
+        </table>
+      </div>
+    </div>
+
+  
+    <script src="sidebar.js"></script>
+    <script>
+      // Kiểm tra xem có dữ liệu trong local storage không
+      if(localStorage.getItem("userData")) {
+           // Lấy dữ liệu từ local storage
+           var userData = JSON.parse(localStorage.getItem("userData"));
+           
+           var buttonIds = ["pc1", "pc2"];
+           // Hiển thị dữ liệu trong bảng
+ 
+           var tableBody = document.getElementById("userDataBody");
+           var bb = document.getElementById("pc");
+           var row = tableBody.insertRow(4);
+           var cell1 = row.insertCell(0);
+           var cell2 = row.insertCell(1);
+           var cell3 = row.insertCell(2);
+           var cell4 = row.insertCell(3);
+           
+           cell1.innerHTML = tableBody.rows.length;
+           cell2.innerHTML = userData.fullName;
+           cell3.innerHTML = userData.role;
+           // Hiển thị hình ảnh trong cell3
+           const imageData = localStorage.getItem('savedImage');
+    const displayImage = document.getElementById('displayImage');
+
+   
+           for (var i = 0; i < buttonIds.length; i++) {
+               var existingButton = document.getElementById(buttonIds[i]).cloneNode(true);
+               existingButton.classList.add("action-buttons");
+               cell4.appendChild(existingButton);
+           }
+      }
+
+      if (localStorage.getItem("userData1")) {
+    // Lấy dữ liệu từ local storage
+    var userData1 = JSON.parse(localStorage.getItem("userData1"));
+
+    var buttonIds = ["pc1", "pc2"];
+    // Hiển thị dữ liệu trong bảng
+userData1.role = userData1.role.replace(/\\n/g, '\n');
+    var tableBody = document.getElementById("userDataBody");
+    var rowData = JSON.parse(localStorage.getItem("1"));
+    // Lấy hàng cần cập nhật, ví dụ, lấy hàng thứ 3
+    var rowToUpdate = tableBody.rows[rowData.STT - 1];
+
+    // Cập nhật dữ liệu trong các ô
+    rowToUpdate.cells[0].innerHTML = rowData.STT;
+rowToUpdate.cells[1].innerHTML = userData1.Name;
+rowToUpdate.cells[2].innerHTML = userData1.role;
+
+} else if(localStorage.getItem("userData2")){
+  // Lấy dữ liệu từ local storage
+  var userData1 = JSON.parse(localStorage.getItem("userData2"));
+
+var buttonIds = ["pc3", "pc4"];
+// Hiển thị dữ liệu trong bảng
+
+var tableBody = document.getElementById("userDataBody");
+var rowData = JSON.parse(localStorage.getItem("2"));
+// Lấy hàng cần cập nhật, ví dụ, lấy hàng thứ 3
+var rowToUpdate = tableBody.rows[rowData.STT - 1];
+
+// Cập nhật dữ liệu trong các ô
+rowToUpdate.cells[0].innerHTML = rowData.STT;
+rowToUpdate.cells[1].innerHTML = userData1.Name;
+rowToUpdate.cells[2].innerHTML = userData1.role;
+
+} else if(localStorage.getItem("userData3")){
+  // Lấy dữ liệu từ local storage
+  var userData1 = JSON.parse(localStorage.getItem("userData3"));
+
+var buttonIds = ["pc5", "pc6"];
+// Hiển thị dữ liệu trong bảng
+
+var tableBody = document.getElementById("userDataBody");
+var rowData = JSON.parse(localStorage.getItem("3"));
+// Lấy hàng cần cập nhật, ví dụ, lấy hàng thứ 3
+var rowToUpdate = tableBody.rows[rowData.STT - 1];
+
+// Cập nhật dữ liệu trong các ô
+rowToUpdate.cells[0].innerHTML = rowData.STT;
+rowToUpdate.cells[1].innerHTML = userData1.Name;
+rowToUpdate.cells[2].innerHTML = userData1.role;
+
+} else if(localStorage.getItem("userData4")){
+  // Lấy dữ liệu từ local storage
+  var userData1 = JSON.parse(localStorage.getItem("userData4"));
+
+var buttonIds = ["pc7", "pc8"];
+// Hiển thị dữ liệu trong bảng
+
+var tableBody = document.getElementById("userDataBody");
+var rowData = JSON.parse(localStorage.getItem("4"));
+// Lấy hàng cần cập nhật, ví dụ, lấy hàng thứ 3
+var rowToUpdate = tableBody.rows[rowData.STT - 1];
+
+// Cập nhật dữ liệu trong các ô
+rowToUpdate.cells[0].innerHTML = rowData.STT;
+rowToUpdate.cells[1].innerHTML = userData1.Name;
+rowToUpdate.cells[2].innerHTML = userData1.role;
+
+}
+
+
+      
+      function saveRowToLocalStorage(rowIndex) {
+    var table = document.getElementById("TB");
+    var rowData = {
+        STT :  table.rows[rowIndex].cells[0].innerText,
+        Name: table.rows[rowIndex].cells[1].innerText,
+        role: table.rows[rowIndex].cells[2].innerText,
+    };
+
+    // Lưu dữ liệu của hàng vào local storage
+    localStorage.setItem(rowIndex, JSON.stringify(rowData));
+
+    // Thông báo thành công
+    Redirect()
+} 
+
+
+
+
+function deleteRow(button) {
+        // Get the row that contains the button
+        var tableBody = document.getElementById("userDataBody");
+        var row = button.parentNode.parentNode;
+        var nameValue = row.cells[0].innerHTML;
+        // Delete the row
+        row.parentNode.removeChild(row);
+        for (var i = nameValue + 1; i < tableBody.rows.length; i++) {
+          tableBody.rows[i].cells[0].innerHTML = i ;
+        }
+    }
+
+
+
+
+
+
+function Redirect(src)
+{
+       window.location ="Phân quyền-chỉnh sửa.html";
+}
+function Redirect2(src)
+{
+       window.location ="người dùng-tạo mới.html";
+}
+function Redirect3(src)
+{
+       window.location ="người dùng-danh sách.html";
+}
+    </script>
+  </body>
+</html>

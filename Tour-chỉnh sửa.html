@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+
+    <!--font awesome-->
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Marck+Script&display=swap" rel="stylesheet">
+
+    <!--css file-->
+    <link rel="stylesheet" href="Tour-tạo mới.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo">
+        <span class="logo-name">Travel</span>
+      <span class="logo-name__Trangquảntrị">Trang quản trị</span>
+      </div>
+
+      <ul class="nav-list">
+        <li>
+            <div class="profile-details">
+              <div class="profile-content">
+                <img src="https://top10dienbien.com/wp-content/uploads/2022/10/avatar-cute-9.jpg" alt="" />
+              </div>
+  
+              <div class="name-job">
+                <div class="name"> Phong</div>
+                <div class="job">Admin</div>
+              </div>
+              <i class="fas fa-right-to-bracket"></i>
+            </div>
+          </li>
+
+        <li>
+          <div class="icon-link">
+          <a href="#">
+            <i class="bi bi-house-door-fill"></i>
+            <span class="link-name">Trang chủ</span>
+          </a>
+  </div>
+          <ul class="sub-menu blank">
+            <li><a href="#" class="link-name">Trang chủ</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <div class="icon-link">
+            <a href="#">
+                <i class="bi bi-clipboard2-fill"></i>
+              <span class="link-name">Quản lí Tour</span>
+            </a>
+            <i class="fas fa-caret-down arrow"></i>
+          </div>
+
+          <ul class="sub-menu">
+            <li><a href="#" class="link-name">Quản lí Tour</a></li>
+            <li><a href="Địa điểm-danh sách.html">Địa điểm</a></li>
+            <li><a href="Quản lí bài viết danh mục.html">Danh mục</a></li>
+            <li><a href="Tour-danh sách.html">Tours</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <div class="icon-link">
+            <a href="quản lí bài viết - danh sách bài đăng.html">
+              <i class="fa-sharp fa-solid fa-file-pen"></i>
+              <span class="link-name">Bài viết</span>
+            </a>
+            <i class="fas fa-caret-down arrow"></i>
+          </div>
+
+          <ul class="sub-menu">
+            <li><a href="#" class="link-name">Bài viết</a></li>
+            <li><a href="quản lí bài viết - danh sách bài đăng.html">Bài viết</a></li>
+            <li><a href="Quản lí bài viết danh mục.html">Danh mục</a></li>
+          </ul>
+        </li>
+
+        
+        <li>
+          <div class="icon-link">
+          <a href="#">
+            <i class="bi bi-calendar-fill"></i>
+            <span class="link-name">Đặt tour</span>
+          </a>
+        </div>
+          <ul class="sub-menu blank">
+            <li><a href="#" class="link-name">Đặt tour</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <div class="icon-link">
+          <a href="Phân quyền.html">
+            <i class="fa-solid fa-sitemap"></i>
+            <span class="link-name">Phân quyền</span>
+          </a>
+        </div>
+          <ul class="sub-menu blank">
+            <li><a href="#" class="link-name">Phân quyền</a></li>
+          </ul>
+        </li>
+
+      
+
+        <li>
+          <div class="icon-link">
+          <a href="người dùng-danh sách.html">
+            <i class="bi bi-person-fill"></i>
+            <span class="link-name">Người dùng</span>
+          </a>
+        </div>
+          <ul class="sub-menu blank">
+            <li><a href="#" class="link-name">Người dùng</a></li>
+          </ul>
+        </li>
+
+      
+      </ul>
+    </div>
+
+    <div class="home-section">
+      <header class="home-content">
+        <i class="fas fa-bars"></i>
+        <!-- <button class="btn btn-primary" type="button">Button</button> -->
+        <button class="Login" type="button">Đăng xuất</button>
+        <!-- <span class="text">Dropdown Sidebar Menu</span> -->
+      </header>
+
+      <div class="under__header">
+        <div class="under__header-content">
+          <i class="bi bi-house-door-fill"></i>
+          <a href="#" class="=content-name">Trang chủ</a>
+          <p>/</p>
+          <a href="#" class="=content-name"> Tour</a>
+          <p>/</p>
+          <p class="DM"> Chỉnh sửa </p>
+        </div>
+      </div>
+
+      <div class="blue-button">
+        <button class="blue-button__Lưudữliệu" onclick="saveDataAndNavigate()">
+            <i class="bi bi-folder-fill"></i>
+            Lưu 
+          </button>
+        <button class="blue-button__Tạomới" onclick=" resetInputs()">
+          <i class="bi bi-arrow-clockwise"></i>
+          Reset
+        </button>
+
+      </div>
+      
+         <div class="form">
+            <div class="H1">
+      <div class="Têndanhmục">
+        <p class="Têndanhmục-name">Tiêu đề tour <span style="color: #FF0505;">(*)</span></p>
+        <input class="Têndanhmục-input" id="BV" placeholder="Tên tour">
+        <div class="error-message"></div>
+        </input>
+      </div>
+      <div class="SLthamgia">
+        <p class="SLthamgia-name">Số người tham gia</p>
+        <input class="SLthamgia-input" id="SL" placeholder="">
+        <div class="error-message"></div>
+        </input>
+      </div>
+      <div class="giángườilớn">
+        <p class="giángườilớn-name">Giá người lớn </p>
+        <input class="giángườilớn-input" id="NL" placeholder="">
+        <div class="error-message"></div>
+        </input>
+      </div>
+      <div class="giátrẻem">
+        <p class="giátrẻem-name">Giá trẻ em </p>
+        <input class="giátrẻem-input" id="TE" placeholder="">
+        <div class="error-message"></div>
+        </input>
+      </div>
+      <div class="giảmgiá">
+        <p class="giảmgiá-name">Giảm giá </p>
+        <input class="giảmgiá-input" id="GG" placeholder="">
+        <div class="error-message"></div>
+        </input>
+      </div>
+    </div>
+
+    <div class="lịchtrình">
+        <p class="lịchtrình-name">Lịch trình</p>
+        <input class="lịchtrình-input" id="LT" placeholder="Lịch trình">
+        <div class="error-message"></div>
+        </input>
+      </div>
+
+      <div class="H2">
+        <div class="phươngtiệndichuyển">
+            <p class="phươngtiệndichuyển-name">Phương tiện di chuyển</p>
+            <input class="phươngtiệndichuyển-input" id="PT" placeholder="Phương tiện di chuyển">
+            <div class="error-message"></div>
+            </input>
+          </div>
+
+          <div class="địađiểmxuấtphát">
+            <p class="địađiểmxuấtphát-name">Địa điểm xuất phát</p>
+            <input class="địađiểmxuấtphát-input" id="DD" placeholder="Địa điểm xuất phát">
+            <div class="error-message"></div>
+            </input>
+          </div>
+      </div>
+
+      <div class="H3">
+        <div class="ngàybắtđầu">
+            <p class="ngàybắtđầu-name">Ngày đi</p>
+            <input class="ngàybắtđầu-input" id="ND" placeholder="Phương tiện di chuyển" type="date">
+            <div class="error-message"></div>
+            </input>
+          </div>
+
+          <div class="ngàykếtthúc">
+            <p class="ngàykếtthúc-name">Ngày về</p>
+            <input class="ngàykếtthúc-input" id="NV" placeholder="Phương tiện di chuyển" type="date">
+            <div class="error-message"></div>
+            </input>
+          </div>
+      </div>
+
+      <div class="Trạngthái">
+        <p class="Danhmục-name">Trạng thái </p>
+        <select name="danhmục" id="TD">
+            <option value="Đang diễn ra">Đang diễn ra</option>
+            <option value="Sắp diễn ra">Sắp diễn ra</option>
+            <option value="Đã kết thúc">Đã kết thúc</option>
+        </select>
+
+
+      <div class="Môtả">
+        <p class="Môtả-name">Mô tả</p>
+        <textarea class="Môtả-input" id="MT">
+-08:00-20:30 Đón tại Phố Cổ Hà Nội (chỉ áp dụng cho khách mua vé khởi hành từ Hà Nội)
+-Đến Cảng Tuần Châu, checkin
+-Lên tàu và thưởng thức đồ uống chào đón
+-Thưởng thức bữa trưa trên tàu trong khi du ngoạn trên vùng Vịnh Hạ Long
+-Tham quan Hang Luồn/Trang trại Ngọc trai bằng thuyền tre hoặc thuyền kayak
+-Trở lại tàu, tận hưởng Happy Hour (chi phí tự túc)
+-Thưởng thức bữa tối trên tàu
+-Nghỉ đêm trên tàu
+-Xuống bến tại Cảng Tuần Châu
+-Kết thúc tour.
+        </textarea>
+      </div>
+       
+      <p class="Ảnh-name">Ảnh</p>
+      <div class="Ảnh">
+        <div class="Ảnh-content">
+            <i class="bi bi-cloud-upload-fill"></i>
+            <div class="Ảnh-content__text">Kéo thả ảnh của bạn vào đây</div>
+            <button class="Ảnh-content__button"  onclick="selectImage()"> Chọn tệp </button>
+            <input type="file" id="fileInput" style="display: none;" onchange="displayImage()">
+               <img src="https://coolbackgrounds.io/images/backgrounds/white/pure-white-background-85a2a7fd.jpg" id="selectedImage" alt="Selected Image"/>
+        </div>
+    </div>
+  </div>
+    </div>
+
+  
+    <script src="sidebar.js"></script>
+    <script>
+      function validateInput() {
+let formElement = document.querySelector(".form") 
+let inputElement = formElement.querySelectorAll(".Têndanhmục-input")
+ for (let i = 0; i < inputElement.length; i++) {
+    if (inputElement[i].value === "") {
+     inputElement[i].parentElement.querySelector(".error-message").innerText = `Dữ liệu chưa được nhập`
+}else
+    {
+inputElement[i].parentElement.querySelector(".error-message").innerText = ""
+         }
+}
+}
+function selectImage() {
+        // Khi nút "Chọn ảnh" được nhấp, kích hoạt sự kiện click của ô chọn file ẩn
+        document.getElementById('fileInput').click();
+    }
+
+function displayImage() {
+        var input = document.getElementById('fileInput');
+        var image = document.getElementById('selectedImage');
+
+        // Kiểm tra xem có tệp tin nào được chọn hay không
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            // Đọc nội dung của tệp tin và hiển thị vào thẻ <img>
+            reader.onload = function (e) {
+                image.src = e.target.result;
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    function saveImage() {
+      const input = document.getElementById('fileInput');
+      const file = input.files[0];
+
+      if (file) {
+        const reader = new FileReader();
+
+        reader.onload = function (e) {
+          var imageData = e.target.result;
+
+          // Lưu ảnh vào local storage với một key nào đó
+          localStorage.setItem('savedImage', imageData);
+
+          alert('Image saved to local storage!');
+        };
+
+        reader.readAsDataURL(file);
+      } else if(localStorage.getItem("rowData_1")){
+        var rowData = JSON.parse(localStorage.getItem("rowData_1"));
+           if (rowData) {
+           var imageData = rowData.image;
+           }
+           localStorage.setItem('savedImage', imageData);
+      } else if(localStorage.getItem("rowData_2")){
+        var rowData = JSON.parse(localStorage.getItem("rowData_2"));
+           if (rowData) {
+           var imageData = rowData.image;
+           }
+           localStorage.setItem('savedImage', imageData);
+      } else if(localStorage.getItem("rowData_3")){
+        var rowData = JSON.parse(localStorage.getItem("rowData_3"));
+           if (rowData) {
+           var imageData = rowData.image;
+           }
+           localStorage.setItem('savedImage', imageData);
+      } else if(localStorage.getItem("rowData_4")){
+        var rowData = JSON.parse(localStorage.getItem("rowData_4"));
+           if (rowData) {
+           var imageData = rowData.image;
+           }
+           localStorage.setItem('savedImage', imageData);
+      }
+      else {
+        alert('Hãy chọn ảnh');
+      }
+    }
+
+function saveDataAndNavigate() {
+
+  
+ if(localStorage.getItem("rowData_1")) {
+            // Lấy dữ liệu từ input
+           var Lịchtrình = document.getElementById("LT").value;
+           var Tiêuđề = document.getElementById("BV").value ;
+           var Sốlượng = document.getElementById("SL").value ;
+           var Ngườilớn = document.getElementById("NL").value ;
+           var Trẻem = document.getElementById("TE").value ;
+           var Phươngtiện = document.getElementById("PT").value ;
+           var Địađiểm = document.getElementById("DD").value ;
+           var Ngàyđi = document.getElementById("ND").value ;
+           var Ngàyvề =  document.getElementById("NV").value ;
+           var Giảmgiá =  document.getElementById("GG").value;
+
+                    // Tạo một đối tượng chứa thông tin người dùng và hình ảnh
+                    var userData = {
+                        Lịchtrình: Lịchtrình,
+                        Tiêuđề: Tiêuđề,
+                        Sốlượng: Sốlượng,
+                        Ngườilớn: Ngườilớn,
+                        Trẻem: Trẻem,
+                        Phươngtiện: Phươngtiện,
+                        Địađiểm: Địađiểm,
+                        Ngàyđi: Ngàyđi,
+                        Ngàyvề: Ngàyvề,
+                        Giảmgiá: Giảmgiá
+                        
+                    };
+
+                    // Lưu đối tượng vào local storage
+                    localStorage.setItem("userData1", JSON.stringify(userData));
+
+                    // Chuyển đến trang khác hoặc thực hiện các hành động khác
+                    // window.location.href = "nextPage.html";
+                    saveImage();
+                    alert('Chỉnh sửa hoàn tất.');
+                     window.location.href = "Tour-danh sách.html";
+                } else if(localStorage.getItem("rowData_2")) {
+            // Lấy dữ liệu từ input
+           var Lịchtrình = document.getElementById("LT").value;
+           var Tiêuđề = document.getElementById("BV").value ;
+           var Sốlượng = document.getElementById("SL").value ;
+           var Ngườilớn = document.getElementById("NL").value ;
+           var Trẻem = document.getElementById("TE").value ;
+           var Phươngtiện = document.getElementById("PT").value ;
+           var Địađiểm = document.getElementById("DD").value ;
+           var Ngàyđi = document.getElementById("ND").value ;
+           var Ngàyvề =  document.getElementById("NV").value ;
+           var Giảmgiá =  document.getElementById("GG").value;
+
+                    // Tạo một đối tượng chứa thông tin người dùng và hình ảnh
+                    var userData = {
+                        Lịchtrình: Lịchtrình,
+                        Tiêuđề: Tiêuđề,
+                        Sốlượng: Sốlượng,
+                        Ngườilớn: Ngườilớn,
+                        Trẻem: Trẻem,
+                        Phươngtiện: Phươngtiện,
+                        Địađiểm: Địađiểm,
+                        Ngàyđi: Ngàyđi,
+                        Ngàyvề: Ngàyvề,
+                        Giảmgiá: Giảmgiá
+                        
+                    };
+
+                    // Lưu đối tượng vào local storage
+                    localStorage.setItem("userData2", JSON.stringify(userData));
+
+                    // Chuyển đến trang khác hoặc thực hiện các hành động khác
+                    // window.location.href = "nextPage.html";
+                    saveImage();
+                    alert('Chỉnh sửa hoàn tất.');
+                     window.location.href = "Tour-danh sách.html";
+                } else if(localStorage.getItem("rowData_3")) {
+            // Lấy dữ liệu từ input
+           var Lịchtrình = document.getElementById("LT").value;
+           var Tiêuđề = document.getElementById("BV").value ;
+           var Sốlượng = document.getElementById("SL").value ;
+           var Ngườilớn = document.getElementById("NL").value ;
+           var Trẻem = document.getElementById("TE").value ;
+           var Phươngtiện = document.getElementById("PT").value ;
+           var Địađiểm = document.getElementById("DD").value ;
+           var Ngàyđi = document.getElementById("ND").value ;
+           var Ngàyvề =  document.getElementById("NV").value ;
+           var Giảmgiá =  document.getElementById("GG").value;
+
+                    // Tạo một đối tượng chứa thông tin người dùng và hình ảnh
+                    var userData = {
+                        Lịchtrình: Lịchtrình,
+                        Tiêuđề: Tiêuđề,
+                        Sốlượng: Sốlượng,
+                        Ngườilớn: Ngườilớn,
+                        Trẻem: Trẻem,
+                        Phươngtiện: Phươngtiện,
+                        Địađiểm: Địađiểm,
+                        Ngàyđi: Ngàyđi,
+                        Ngàyvề: Ngàyvề,
+                        Giảmgiá: Giảmgiá
+                        
+                    };
+
+                    // Lưu đối tượng vào local storage
+                    localStorage.setItem("userData3", JSON.stringify(userData));
+
+                    // Chuyển đến trang khác hoặc thực hiện các hành động khác
+                    // window.location.href = "nextPage.html";
+                    saveImage();
+                    alert('Chỉnh sửa hoàn tất.');
+                     window.location.href = "Tour-danh sách.html";
+                } else if(localStorage.getItem("rowData_4")) {
+            // Lấy dữ liệu từ input
+           var Lịchtrình = document.getElementById("LT").value;
+           var Tiêuđề = document.getElementById("BV").value ;
+           var Sốlượng = document.getElementById("SL").value ;
+           var Ngườilớn = document.getElementById("NL").value ;
+           var Trẻem = document.getElementById("TE").value ;
+           var Phươngtiện = document.getElementById("PT").value ;
+           var Địađiểm = document.getElementById("DD").value ;
+           var Ngàyđi = document.getElementById("ND").value ;
+           var Ngàyvề =  document.getElementById("NV").value ;
+           var Giảmgiá =  document.getElementById("GG").value;
+
+                    // Tạo một đối tượng chứa thông tin người dùng và hình ảnh
+                    var userData = {
+                        Lịchtrình: Lịchtrình,
+                        Tiêuđề: Tiêuđề,
+                        Sốlượng: Sốlượng,
+                        Ngườilớn: Ngườilớn,
+                        Trẻem: Trẻem,
+                        Phươngtiện: Phươngtiện,
+                        Địađiểm: Địađiểm,
+                        Ngàyđi: Ngàyđi,
+                        Ngàyvề: Ngàyvề,
+                        Giảmgiá: Giảmgiá
+                        
+                    };
+
+                    // Lưu đối tượng vào local storage
+                    localStorage.setItem("userData4", JSON.stringify(userData));
+
+                    // Chuyển đến trang khác hoặc thực hiện các hành động khác
+                    // window.location.href = "nextPage.html";
+                    saveImage();
+                    alert('Chỉnh sửa hoàn tất.');
+                     window.location.href = "Tour-danh sách.html";
+                }
+            }
+            
+       
+                
+      if(localStorage.getItem("rowData_1")) {
+        
+           // Lấy dữ liệu từ local storage
+
+           var rowData1 = JSON.parse(localStorage.getItem("rowData_1"));
+           if (rowData1) {
+           document.getElementById("BV").value = rowData1.fullName;
+           document.getElementById("selectedImage").src = rowData1.image;
+           document.getElementById("TD").value = rowData1.dob;
+           document.getElementById("LT").value = rowData1.Lịchtrình;
+           document.getElementById("SL").value = rowData1.Sốngười;
+           document.getElementById("NL").value = rowData1.Giángườilớn;
+           document.getElementById("TE").value = rowData1.Giátrẻem;
+           document.getElementById("PT").value = rowData1.Dichuyển;
+           document.getElementById("DD").value = rowData1.Điểmxuấtphát;
+           document.getElementById("ND").value = rowData1.Ngàyđi;
+           document.getElementById("NV").value = rowData1.Ngàyvề;
+           document.getElementById("GG").value = rowData1.Giảmgiá;
+           }
+      } else if(localStorage.getItem("rowData_2")) {
+        
+        // Lấy dữ liệu từ local storage
+
+        var rowData2 = JSON.parse(localStorage.getItem("rowData_2"));
+        if (rowData2) {
+        document.getElementById("BV").value = rowData2.fullName;
+        document.getElementById("selectedImage").src = rowData2.image;
+        document.getElementById("TD").value = rowData2.dob;
+        document.getElementById("LT").value = rowData2.Lịchtrình;
+        document.getElementById("SL").value = rowData2.Sốngười;
+        document.getElementById("NL").value = rowData2.Giángườilớn;
+        document.getElementById("TE").value = rowData2.Giátrẻem;
+        document.getElementById("PT").value = rowData2.Dichuyển;
+        document.getElementById("DD").value = rowData2.Điểmxuấtphát;
+        document.getElementById("ND").value = rowData2.Ngàyđi;
+        document.getElementById("NV").value = rowData2.Ngàyvề;
+        document.getElementById("GG").value = rowData2.Giảmgiá;
+        }
+      }  if(localStorage.getItem("rowData_3")) {
+        
+        // Lấy dữ liệu từ local storage
+
+        var rowData3 = JSON.parse(localStorage.getItem("rowData_3"));
+        if (rowData3) {
+        document.getElementById("BV").value = rowData3.fullName;
+        document.getElementById("selectedImage").src = rowData3.image;
+        document.getElementById("TD").value = rowData3.dob;
+        document.getElementById("LT").value = rowData3.Lịchtrình;
+        document.getElementById("SL").value = rowData3.Sốngười;
+        document.getElementById("NL").value = rowData3.Giángườilớn;
+        document.getElementById("TE").value = rowData3.Giátrẻem;
+        document.getElementById("PT").value = rowData3.Dichuyển;
+        document.getElementById("DD").value = rowData3.Điểmxuấtphát;
+        document.getElementById("ND").value = rowData3.Ngàyđi;
+        document.getElementById("NV").value = rowData3.Ngàyvề;
+        document.getElementById("GG").value = rowData3.Giảmgiá;
+        }
+      }  if(localStorage.getItem("rowData_4")) {
+        
+        // Lấy dữ liệu từ local storage
+
+        var rowData4 = JSON.parse(localStorage.getItem("rowData_4"));
+        if (rowData4) {
+        document.getElementById("BV").value = rowData4.fullName;
+        document.getElementById("selectedImage").src = rowData4.image;
+        document.getElementById("TD").value = rowData4.dob;
+        document.getElementById("LT").value = rowData4.Lịchtrình;
+        document.getElementById("SL").value = rowData4.Sốngười;
+        document.getElementById("NL").value = rowData4.Giángườilớn;
+        document.getElementById("TE").value = rowData4.Giátrẻem;
+        document.getElementById("PT").value = rowData4.Dichuyển;
+        document.getElementById("DD").value = rowData4.Điểmxuấtphát;
+        document.getElementById("ND").value = rowData4.Ngàyđi;
+        document.getElementById("NV").value = rowData4.Ngàyvề;
+        document.getElementById("GG").value = rowData4.Giảmgiá;
+        }
+      }
+
+
+
+      function resetInputs() {
+                 // Lấy ra giá trị rỗng
+                 var emptyValue = '';
+
+// Đặt lại giá trị của từng trường nhập thành rỗng
+document.getElementById("BV").value = emptyValue;
+           document.getElementById("selectedImage").src = "https://coolbackgrounds.io/images/backgrounds/white/pure-white-background-85a2a7fd.jpg";
+           document.getElementById("TD").value = emptyValue;
+           document.getElementById("LT").value = emptyValue;
+           document.getElementById("SL").value = emptyValue;
+           document.getElementById("NL").value = emptyValue;
+           document.getElementById("TE").value = emptyValue;
+           document.getElementById("PT").value = emptyValue;
+           document.getElementById("DD").value = emptyValue;
+           document.getElementById("ND").value = emptyValue;
+           document.getElementById("NV").value = emptyValue;
+           document.getElementById("GG").value = emptyValue;
+           document.getElementById("MT").value = emptyValue;
+}
+
+    </script>
+  </body>
+</html>

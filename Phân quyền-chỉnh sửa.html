@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+
+    <!--font awesome-->
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Marck+Script&display=swap" rel="stylesheet">
+
+    <!--css file-->
+    <link rel="stylesheet" href="Phân quyền-chỉnh sửa.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo">
+        <span class="logo-name">Travel</span>
+      <span class="logo-name__Trangquảntrị">Trang quản trị</span>
+      </div>
+
+      <ul class="nav-list">
+        <li>
+            <div class="profile-details">
+              <div class="profile-content">
+                <img src="https://top10dienbien.com/wp-content/uploads/2022/10/avatar-cute-9.jpg" alt="" />
+              </div>
+  
+              <div class="name-job">
+                <div class="name"> Phong</div>
+                <div class="job">Admin</div>
+              </div>
+              <i class="fas fa-right-to-bracket"></i>
+            </div>
+          </li>
+
+        <li>
+          <div class="icon-link">
+          <a href="#">
+            <i class="bi bi-house-door-fill"></i>
+            <span class="link-name">Trang chủ</span>
+          </a>
+  </div>
+          <ul class="sub-menu blank">
+            <li><a href="#" class="link-name">Trang chủ</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <div class="icon-link">
+            <a href="#">
+                <i class="bi bi-clipboard2-fill"></i>
+              <span class="link-name">Quản lí Tour</span>
+            </a>
+            <i class="fas fa-caret-down arrow"></i>
+          </div>
+
+          <ul class="sub-menu">
+            <li><a href="#" class="link-name">Quản lí Tour</a></li>
+            <li><a href="#">Địa điểm</a></li>
+            <li><a href="#">Danh mục</a></li>
+            <li><a href="#">Tours</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <div class="icon-link">
+            <a href="quản lí bài viết - danh sách bài đăng.html">
+              <i class="fa-sharp fa-solid fa-file-pen"></i>
+              <span class="link-name">Bài viết</span>
+            </a>
+            <i class="fas fa-caret-down arrow"></i>
+          </div>
+
+          <ul class="sub-menu">
+            <li><a href="#" class="link-name">Bài viết</a></li>
+            <li><a href="quản lí bài viết - danh sách bài đăng.html">Bài viết</a></li>
+            <li><a href="Quản lí bài viết danh mục.html">Danh mục</a></li>
+          </ul>
+        </li>
+
+        
+        <li>
+          <div class="icon-link">
+          <a href="#">
+            <i class="bi bi-calendar-fill"></i>
+            <span class="link-name">Đặt tour</span>
+          </a>
+        </div>
+          <ul class="sub-menu blank">
+            <li><a href="#" class="link-name">Đặt tour</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <div class="icon-link">
+          <a href="Phân quyền.html">
+            <i class="fa-solid fa-sitemap"></i>
+            <span class="link-name">Phân quyền</span>
+          </a>
+        </div>
+          <ul class="sub-menu blank">
+            <li><a href="#" class="link-name">Phân quyền</a></li>
+          </ul>
+        </li>
+
+      
+
+        <li>
+          <div class="icon-link">
+          <a href="người dùng-danh sách.html">
+            <i class="bi bi-person-fill"></i>
+            <span class="link-name">Người dùng</span>
+          </a>
+        </div>
+          <ul class="sub-menu blank">
+            <li><a href="#" class="link-name">Người dùng</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="home-section">
+      <header class="home-content">
+        <i class="fas fa-bars"></i>
+        <!-- <button class="btn btn-primary" type="button">Button</button> -->
+        <button class="Login" type="button">Đăng xuất</button>
+        <!-- <span class="text">Dropdown Sidebar Menu</span> -->
+      </header>
+
+      <div class="under__header">
+        <div class="under__header-content">
+          <i class="bi bi-house-door-fill"></i>
+          <a href="#" class="=content-name">Trang chủ</a>
+          <p>/</p>
+          <a href="Phân quyền.html" class="=content-name"> Phân quyền</a>
+          <p>/</p>
+          <p class="DM">Chỉnh sửa</p>
+        </div>
+      </div>
+
+      <div class="blue-button">
+        <button class="blue-button__Lưudữliệu" onclick="saveDataAndNavigate()">
+            <i class="bi bi-folder-fill"></i>
+            Lưu 
+          </button>
+        <button class="blue-button__Tạomới" onclick="resetInputs()">
+          <i class="bi bi-arrow-clockwise"></i>
+          Reset
+        </button>
+
+      </div>
+      
+       <div class="Tạomới">
+        
+        <div class="form"></div>
+        <div class="Têndanhmục">
+        <p class="Têndanhmục-name">Tên vai trò <span style="color: #FF0505;">(*)</span></p>
+        <input class="Têndanhmục-input" placeholder="Tên vai trò" id="hvt">
+        <div class="error-message"></div>
+        </input>
+      </div>
+
+      <div class="Vaitrò">
+        <p class="Vaitrò-name">Phân quyền </p>
+        
+        <select name="vaitrò" id="TD" class="select">
+            <option value="Truy cập hệ thống">Truy cập hệ thống</option>
+            <option value="Danh sách mục">Danh sách mục</option>
+            <option value="Tạo mới danh mục">Tạo mới danh mục</option>
+            <option value="Chỉnh sửa danh mục">Chỉnh sửa danh mục</option>
+            <option value="Xóa danh mục">Xóa danh mục</option>
+            <option value="Danh sách bài viết">Danh sách bài viết</option>
+            <option value="Tạo mới bài viết">Tạo mới bài viết</option>
+            <option value="Chỉnh sửa bài viết">Chỉnh sửa bài viết</option>
+            <option value="Xóa bài viết">Xóa bài viết</option>
+            <option value="Quản lí đặt Tour">Quản lí đặt Tour</option>
+            <option value="Xóa và cập nhập trạng thái">Xóa và cập nhập trạng thái</option>
+           
+        </select>
+        <i class="bi bi-plus" id="plus" onclick="openDropdown()"></i>
+        <textarea type="text" id="selectedOptions"  oninput="autoAdjustTextareaHeight(this)" ></textarea>
+        
+      </div>
+    </div>
+  </div>
+    </div>
+
+  
+    <script src="sidebar.js"></script>
+    <script>
+      function resetInputs() {
+                 // Lấy ra giá trị rỗng
+                 var emptyValue = '';
+
+// Đặt lại giá trị của từng trường nhập thành rỗng
+document.getElementById("hvt").value = emptyValue;
+document.getElementById("selectedOptions").value = emptyValue;
+}
+
+
+
+function validateInput() {
+let formElement = document.querySelector(".form") 
+
+
+let inputElement1 = formElement.querySelectorAll(".Têndanhmục-input")
+ for (let i = 0; i < inputElement1.length; i++) {
+    if (inputElement1[i].value === "") {
+     inputElement1[i].parentElement.querySelector(".error-message").innerText = `Dữ liệu chưa được nhập`
+}else
+    {
+inputElement1[i].parentElement.querySelector(".error-message").innerText = ""
+         }
+}
+
+
+
+
+}
+
+
+function saveDataAndNavigate() {
+  validateInput()
+  if(localStorage.getItem("1")) {
+            // Lấy dữ liệu từ input
+            var Name = document.getElementById("hvt").value;
+            var role = document.getElementById("selectedOptions").value;
+           
+     
+           
+
+                    // Tạo một đối tượng chứa thông tin người dùng và hình ảnh
+                    var userData = {
+                        Name: Name,
+                       role: role
+                    };
+
+                    // Lưu đối tượng vào local storage
+                    localStorage.setItem("userData1", JSON.stringify(userData));
+
+                    // Chuyển đến trang khác hoặc thực hiện các hành động khác
+                    // window.location.href = "nextPage.html";
+                    alert('Chỉnh sửa thành công.');
+                     window.location.href = "Phân quyền.html";
+                  } else if (localStorage.getItem("2")) {
+                     // Lấy dữ liệu từ input
+            var Name = document.getElementById("hvt").value;
+            var role = document.getElementById("selectedOptions").value;
+           
+           
+                    // Tạo một đối tượng chứa thông tin người dùng và hình ảnh
+                    var userData = {
+                        Name: Name,
+                       role: role
+                    };
+
+                    // Lưu đối tượng vào local storage
+                    localStorage.setItem("userData2", JSON.stringify(userData));
+
+                    // Chuyển đến trang khác hoặc thực hiện các hành động khác
+                    // window.location.href = "nextPage.html";
+                    alert('Chỉnh sửa thành công.');
+                     window.location.href = "Phân quyền.html";
+                } else if (localStorage.getItem("3")) {
+                     // Lấy dữ liệu từ input
+            var Name = document.getElementById("hvt").value;
+            var role = document.getElementById("selectedOptions").value;
+           
+           
+                    // Tạo một đối tượng chứa thông tin người dùng và hình ảnh
+                    var userData = {
+                        Name: Name,
+                       role: role
+                    };
+
+                    // Lưu đối tượng vào local storage
+                    localStorage.setItem("userData3", JSON.stringify(userData));
+
+                    // Chuyển đến trang khác hoặc thực hiện các hành động khác
+                    // window.location.href = "nextPage.html";
+                } else if (localStorage.getItem("4")) {
+                     // Lấy dữ liệu từ input
+            var Name = document.getElementById("hvt").value;
+            var role = document.getElementById("selectedOptions").value;
+           
+           
+                    // Tạo một đối tượng chứa thông tin người dùng và hình ảnh
+                    var userData = {
+                        Name: Name,
+                       role: role
+                    };
+
+                    // Lưu đối tượng vào local storage
+                    localStorage.setItem("userData4", JSON.stringify(userData));
+
+                    // Chuyển đến trang khác hoặc thực hiện các hành động khác
+                    // window.location.href = "nextPage.html";
+                }
+              }
+            
+       
+           if(localStorage.getItem("1")) {
+           // Lấy dữ liệu từ local storage
+           var rowData1 = JSON.parse(localStorage.getItem("1"));
+           if (rowData1) {
+           document.getElementById("hvt").value = rowData1.Name;
+           document.getElementById("selectedOptions").value = rowData1.role;
+           }
+      } else if(localStorage.getItem("2")){
+        // Lấy dữ liệu từ local storage
+        var rowData2 = JSON.parse(localStorage.getItem("2"));
+           if (rowData2) {
+           document.getElementById("hvt").value = rowData2.Name;
+           document.getElementById("selectedOptions").value = rowData2.role;
+           }
+      } else if(localStorage.getItem("3")){
+        // Lấy dữ liệu từ local storage
+        var rowData3 = JSON.parse(localStorage.getItem("3"));
+           if (rowData3) {
+           document.getElementById("hvt").value = rowData3.Name;
+           document.getElementById("selectedOptions").value = rowData3.role;
+           }
+          }
+          else if(localStorage.getItem("4")){
+        // Lấy dữ liệu từ local storage
+        var rowData4 = JSON.parse(localStorage.getItem("4"));
+           if (rowData4) {
+           document.getElementById("hvt").value = rowData4.Name;
+           document.getElementById("selectedOptions").value = rowData4.role;
+           }
+          }
+
+
+function selectImage() {
+        // Khi nút "Chọn ảnh" được nhấp, kích hoạt sự kiện click của ô chọn file ẩn
+        document.getElementById('fileInput').click();
+    }
+
+    function displayImage() {
+        var input = document.getElementById('fileInput');
+        var image = document.getElementById('selectedImage');
+
+        // Kiểm tra xem có tệp tin nào được chọn hay không
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            // Đọc nội dung của tệp tin và hiển thị vào thẻ <img>
+            reader.onload = function (e) {
+                image.src = e.target.result;
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    document.getElementById('TD').addEventListener('input', function () {
+  var selectedOption = this.value;
+  var currentInputValue = document.getElementById('selectedOptions').value;
+
+  if (currentInputValue.indexOf(selectedOption) === -1) {
+    // Nếu giá trị chưa tồn tại trong input, thêm vào
+    var newInputValue = currentInputValue + (currentInputValue.length > 0 ? '\n' : '') + selectedOption;
+    document.getElementById('selectedOptions').value = newInputValue;
+
+    // Auto-resize the textarea
+    autoResizeTextarea('selectedOptions');
+  }
+});
+
+function autoResizeTextarea(id) {
+  var textarea = document.getElementById(id);
+  textarea.style.height = 'auto'; // Reset height to auto to shrink back if needed
+  textarea.style.height = textarea.scrollHeight + 'px'; // Set the new height
+  adjustHeight()
+}
+
+function adjustHeight() {
+      var textarea = document.getElementById('selectedOptions');
+      var select = document.getElementById('TD');
+
+      // Đặt chiều cao của textarea là scrollHeight để thích ứng với nội dung bên trong
+      textarea.style.height = 'auto';
+      textarea.style.height = (textarea.scrollHeight) + 'px';
+
+      // Lấy chiều cao của textarea và đặt chiều cao của select tương ứng
+      var textareaHeight = textarea.scrollHeight;
+      select.style.height = textareaHeight + 'px';
+    }
+
+
+ 
+    </script>
+    <script>
+  function openDropdown() {
+    var dropdown = document.getElementById('TD');
+    var event = new Event('mousedown'); // Create a new mouse event
+    dropdown.dispatchEvent(event); // Dispatch the event to open the dropdown
+  }
+    </script>
+  </body>
+</html>

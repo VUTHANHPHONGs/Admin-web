@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+
+    <!--font awesome-->
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Marck+Script&display=swap" rel="stylesheet">
+
+    <!--css file-->
+    <link rel="stylesheet" href="Danh sách bài đăng-chỉnh sửa.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo">
+        <span class="logo-name">Travel</span>
+      <span class="logo-name__Trangquảntrị">Trang quản trị</span>
+      </div>
+
+      <ul class="nav-list">
+        <li>
+            <div class="profile-details">
+              <div class="profile-content">
+                <img src="https://top10dienbien.com/wp-content/uploads/2022/10/avatar-cute-9.jpg" alt="" />
+              </div>
+  
+              <div class="name-job">
+                <div class="name"> Phong</div>
+                <div class="job">Admin</div>
+              </div>
+              <i class="fas fa-right-to-bracket"></i>
+            </div>
+          </li>
+
+        <li>
+          <div class="icon-link">
+          <a href="#">
+            <i class="bi bi-house-door-fill"></i>
+            <span class="link-name">Trang chủ</span>
+          </a>
+  </div>
+          <ul class="sub-menu blank">
+            <li><a href="#" class="link-name">Trang chủ</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <div class="icon-link">
+            <a href="#">
+                <i class="bi bi-clipboard2-fill"></i>
+              <span class="link-name">Quản lí Tour</span>
+            </a>
+            <i class="fas fa-caret-down arrow"></i>
+          </div>
+
+          <ul class="sub-menu">
+            <li><a href="#" class="link-name">Quản lí Tour</a></li>
+            <li><a href="#">Địa điểm</a></li>
+            <li><a href="#">Danh mục</a></li>
+            <li><a href="#">Tours</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <div class="icon-link">
+            <a href="quản lí bài viết - danh sách bài đăng.html">
+              <i class="fa-sharp fa-solid fa-file-pen"></i>
+              <span class="link-name">Bài viết</span>
+            </a>
+            <i class="fas fa-caret-down arrow"></i>
+          </div>
+
+          <ul class="sub-menu">
+            <li><a href="#" class="link-name">Bài viết</a></li>
+            <li><a href="quản lí bài viết - danh sách bài đăng.html">Bài viết</a></li>
+            <li><a href="Quản lí bài viết danh mục.html">Danh mục</a></li>
+          </ul>
+        </li>
+
+        
+        <li>
+          <div class="icon-link">
+          <a href="#">
+            <i class="bi bi-calendar-fill"></i>
+            <span class="link-name">Đặt tour</span>
+          </a>
+        </div>
+          <ul class="sub-menu blank">
+            <li><a href="#" class="link-name">Đặt tour</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <div class="icon-link">
+          <a href="Phân quyền.html">
+            <i class="fa-solid fa-sitemap"></i>
+            <span class="link-name">Phân quyền</span>
+          </a>
+        </div>
+          <ul class="sub-menu blank">
+            <li><a href="#" class="link-name">Phân quyền</a></li>
+          </ul>
+        </li>
+
+      
+
+        <li>
+          <div class="icon-link">
+          <a href="người dùng-danh sách.html">
+            <i class="bi bi-person-fill"></i>
+            <span class="link-name">Người dùng</span>
+          </a>
+        </div>
+          <ul class="sub-menu blank">
+            <li><a href="#" class="link-name">Người dùng</a></li>
+          </ul>
+        </li>
+
+      
+      </ul>
+    </div>
+
+    <div class="home-section">
+      <header class="home-content">
+        <i class="fas fa-bars"></i>
+        <!-- <button class="btn btn-primary" type="button">Button</button> -->
+        <button class="Login" type="button">Đăng xuất</button>
+        <!-- <span class="text">Dropdown Sidebar Menu</span> -->
+      </header>
+
+      <div class="under__header">
+        <div class="under__header-content">
+          <i class="bi bi-house-door-fill"></i>
+          <a href="#" class="=content-name">Trang chủ</a>
+          <p>/</p>
+          <a href="quản lí bài viết - danh sách bài đăng.html" class="=content-name"> Quản Lí Bài viết</a>
+          <p>/</p>
+          <a href="#" class="=content-name"> Danh sách bài đăng</a>
+          <p>/</p>
+          <p class="DM">Chỉnh sửa</p>
+        </div>
+      </div>
+
+      <div class="blue-button">
+        <button class="blue-button__Lưudữliệu" onclick="saveDataAndNavigate()">
+            <i class="bi bi-folder-fill"></i>
+            Lưu 
+          </button>
+        <button class="blue-button__Tạomới" onclick="resetInputs()">
+          <i class="bi bi-arrow-clockwise"></i>
+          Reset
+        </button>
+
+      </div>
+      
+         <div class="form">
+      <div class="Têndanhmục">
+        <p class="Têndanhmục-name">Tên bài viết <span style="color: #FF0505;">(*)</span></p>
+        <input class="Têndanhmục-input" id="BV" placeholder="Tên danh mục">
+        <div class="error-message"></div>
+        </input>
+      </div>
+
+      <div class="Trạngthái">
+        <p class="Danhmục-name">Danh mục </p>
+        <select name="danhmục" id="DM">
+          <option value="Ẩm thực">Ẩm thực </option>
+          <option value="Kinh nghiệm du lịch">Kinh nghiệm du lịch </option>
+          <option value="Cẩm nang du lịch">Cẩm nang du lịch </option>
+          <option value="Cảnh báo">Cảnh báo </option>
+          <option value="Khuyến mãi">Khuyến mãi</option>
+          <option value="Điểm đến">Điểm đến</option>
+        </select>
+
+        <p class="Trạngthái-name">Trạng thái </p>
+        <select name="trạngthái" id="TD">
+            <option value="Đã đăng">Đã đăng</option>
+            <option value="Bản nháp">Bản nháp</option>
+        </select>
+      </div>
+
+      <div class="Môtả">
+        <p class="Môtả-name">Mô tả</p>
+        <textarea class="Môtả-input" id="MT"></textarea>
+      </div>
+       
+      <p class="Ảnh-name">Ảnh</p>
+      <div class="Ảnh">
+        <div class="Ảnh-content">
+            <button class="Ảnh-content__button"  onclick="selectImage()"> Thay thế tệp </button>
+            <input type="file" id="fileInput" style="display: none;" onchange="displayImage()">
+               <img src="https://coolbackgrounds.io/images/backgrounds/white/pure-white-background-85a2a7fd.jpg" id="selectedImage" alt="Selected Image"/>
+        </div>
+    </div>
+  </div>
+    </div>
+
+  
+    <script src="sidebar.js"></script>
+    <script>
+      function validateInput() {
+let formElement = document.querySelector(".form") 
+let inputElement = formElement.querySelectorAll(".Têndanhmục-input")
+ for (let i = 0; i < inputElement.length; i++) {
+    if (inputElement[i].value === "") {
+     inputElement[i].parentElement.querySelector(".error-message").innerText = `Dữ liệu chưa được nhập`
+}else
+    {
+inputElement[i].parentElement.querySelector(".error-message").innerText = ""
+         }
+}
+}
+function selectImage() {
+        // Khi nút "Chọn ảnh" được nhấp, kích hoạt sự kiện click của ô chọn file ẩn
+        document.getElementById('fileInput').click();
+    }
+
+function displayImage() {
+        var input = document.getElementById('fileInput');
+        var image = document.getElementById('selectedImage');
+
+        // Kiểm tra xem có tệp tin nào được chọn hay không
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            // Đọc nội dung của tệp tin và hiển thị vào thẻ <img>
+            reader.onload = function (e) {
+                image.src = e.target.result;
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    function saveImage() {
+      const input = document.getElementById('fileInput');
+      const file = input.files[0];
+
+      if (file) {
+        const reader = new FileReader();
+
+        reader.onload = function (e) {
+          var imageData = e.target.result;
+
+          // Lưu ảnh vào local storage với một key nào đó
+          localStorage.setItem('savedImage', imageData);
+
+    
+        };
+
+        reader.readAsDataURL(file);
+      } else if(localStorage.getItem("1")){
+        var rowData = JSON.parse(localStorage.getItem("1"));
+           if (rowData) {
+           var imageData = rowData.image;
+           }
+           localStorage.setItem('savedImage', imageData);
+      } else if(localStorage.getItem("2")){
+        var rowData = JSON.parse(localStorage.getItem("2"));
+           if (rowData) {
+           var imageData = rowData.image;
+           }
+           localStorage.setItem('savedImage', imageData);
+      } else if(localStorage.getItem("3")){
+        var rowData = JSON.parse(localStorage.getItem("3"));
+           if (rowData) {
+           var imageData = rowData.image;
+           }
+           localStorage.setItem('savedImage', imageData);
+      } else if(localStorage.getItem("4")){
+        var rowData = JSON.parse(localStorage.getItem("4"));
+           if (rowData) {
+           var imageData = rowData.image;
+           }
+           localStorage.setItem('savedImage', imageData);
+      }
+      else {
+        alert('Hãy chọn ảnh');
+      }
+    }
+
+function saveDataAndNavigate() {
+  validateInput()
+  if(localStorage.getItem("1")) {
+            // Lấy dữ liệu từ input
+            var fullName = document.getElementById("BV").value;
+            var dob1 = document.getElementById("DM").value;
+            var dob2 = document.getElementById("TD").value;
+           
+
+                    // Tạo một đối tượng chứa thông tin người dùng và hình ảnh
+                    var userData = {
+                        fullName: fullName,
+                        dob1: dob1,
+                        dob2: dob2
+                    };
+
+                    // Lưu đối tượng vào local storage
+                    localStorage.setItem("userData1", JSON.stringify(userData));
+
+                    // Chuyển đến trang khác hoặc thực hiện các hành động khác
+                    saveImage();
+                    alert('Chỉnh sửa thành công.');
+                     window.location.href = "quản lí bài viết - danh sách bài đăng.html";
+                } else if(localStorage.getItem("2")) {
+            // Lấy dữ liệu từ input
+            var fullName = document.getElementById("BV").value;
+            var dob1 = document.getElementById("DM").value;
+            var dob2 = document.getElementById("TD").value;
+           
+
+                    // Tạo một đối tượng chứa thông tin người dùng và hình ảnh
+                    var userData = {
+                        fullName: fullName,
+                        dob1: dob1,
+                        dob2: dob2
+                    };
+
+                    // Lưu đối tượng vào local storage
+                    localStorage.setItem("userData2", JSON.stringify(userData));
+
+                    // Chuyển đến trang khác hoặc thực hiện các hành động khác
+                    // window.location.href = "nextPage.html";
+                    saveImage();
+                    alert('Chỉnh sửa thành công.');
+                     window.location.href = "quản lí bài viết - danh sách bài đăng.html";
+                } if(localStorage.getItem("3")) {
+            // Lấy dữ liệu từ input
+            var fullName = document.getElementById("BV").value;
+            var dob1 = document.getElementById("DM").value;
+            var dob2 = document.getElementById("TD").value;
+           
+
+                    // Tạo một đối tượng chứa thông tin người dùng và hình ảnh
+                    var userData = {
+                        fullName: fullName,
+                        dob1: dob1,
+                        dob2: dob2
+                    };
+
+                    // Lưu đối tượng vào local storage
+                    localStorage.setItem("userData3", JSON.stringify(userData));
+
+                    // Chuyển đến trang khác hoặc thực hiện các hành động khác
+                    // window.location.href = "nextPage.html";
+                    saveImage();
+                    alert('Chỉnh sửa thành công.');
+                     window.location.href = "quản lí bài viết - danh sách bài đăng.html";
+                } if(localStorage.getItem("4")) {
+            // Lấy dữ liệu từ input
+            var fullName = document.getElementById("BV").value;
+            var dob1 = document.getElementById("DM").value;
+            var dob2 = document.getElementById("TD").value;
+           
+
+                    // Tạo một đối tượng chứa thông tin người dùng và hình ảnh
+                    var userData = {
+                        fullName: fullName,
+                        dob1: dob1,
+                        dob2: dob2
+                    };
+
+                    // Lưu đối tượng vào local storage
+                    localStorage.setItem("userData4", JSON.stringify(userData));
+
+                    // Chuyển đến trang khác hoặc thực hiện các hành động khác
+                    // window.location.href = "nextPage.html";
+                    saveImage()
+                    alert('Chỉnh sửa thành công.');
+                     window.location.href = "quản lí bài viết - danh sách bài đăng.html";
+                };
+            }
+            
+
+
+      if(localStorage.getItem("1")) {
+           // Lấy dữ liệu từ local storage
+           var rowData1 = JSON.parse(localStorage.getItem("1"));
+           if (rowData1) {
+           document.getElementById("BV").value = rowData1.fullName;
+           document.getElementById("selectedImage").src = rowData1.image;
+           document.getElementById("DM").value = rowData1.dob1;
+           document.getElementById("TD").value = rowData1.dob2;
+           }
+      } else if(localStorage.getItem("2")) {
+           // Lấy dữ liệu từ local storage
+           var rowData2 = JSON.parse(localStorage.getItem("2"));
+           if (rowData2) {
+           document.getElementById("BV").value = rowData2.fullName;
+           document.getElementById("selectedImage").src = rowData2.image;
+           document.getElementById("DM").value = rowData2.dob1;
+           document.getElementById("TD").value = rowData2.dob2;
+           }
+      }  else if(localStorage.getItem("3")) {
+           // Lấy dữ liệu từ local storage
+           var rowData3 = JSON.parse(localStorage.getItem("3"));
+           if (rowData3) {
+           document.getElementById("BV").value = rowData3.fullName;
+           document.getElementById("selectedImage").src = rowData3.image;
+           document.getElementById("DM").value = rowData3.dob1;
+           document.getElementById("TD").value = rowData3.dob2;
+           }
+      }  if(localStorage.getItem("4")) {
+           // Lấy dữ liệu từ local storage
+           var rowData4 = JSON.parse(localStorage.getItem("4"));
+           if (rowData4) {
+           document.getElementById("BV").value = rowData4.fullName;
+           document.getElementById("selectedImage").src = rowData4.image;
+           document.getElementById("DM").value = rowData4.dob1;
+           document.getElementById("TD").value = rowData4.dob2;
+           }
+      }
+
+
+
+
+      function resetInputs() {
+                 // Lấy ra giá trị rỗng
+                 var emptyValue = '';
+
+// Đặt lại giá trị của từng trường nhập thành rỗng
+document.getElementById("BV").value = emptyValue;
+document.getElementById("TD").value = emptyValue;
+document.getElementById("DM").value = emptyValue;
+document.getElementById("MT").value = emptyValue;
+}
+    </script>
+  </body>
+</html>
